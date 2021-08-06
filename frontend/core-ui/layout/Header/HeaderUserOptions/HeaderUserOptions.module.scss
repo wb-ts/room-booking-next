@@ -1,0 +1,23 @@
+.headerUserOptions {
+  position: absolute;
+  left: -10px;
+  top: 40px;
+  min-width: 130px;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+
+  &__title {
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+
+    &:hover {
+      background-color: #259a7a;
+      color: white;
+    }
+  }
+}

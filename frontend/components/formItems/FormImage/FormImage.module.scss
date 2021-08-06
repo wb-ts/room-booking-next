@@ -1,0 +1,20 @@
+.formImage {
+  display: flex;
+  flex-direction: column;
+
+  &__label {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0;
+
+    &__avatar {
+      border-radius: 99px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      min-width: 45px;
+    }
+  }
+}

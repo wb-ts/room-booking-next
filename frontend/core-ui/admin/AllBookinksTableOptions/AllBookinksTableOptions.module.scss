@@ -1,0 +1,132 @@
+@mixin border {
+  border: 1px solid black;
+}
+
+.allBookinksTableOptions {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  @include border();
+  border-radius: 10px;
+  gap: 1rem;
+
+  &:hover {
+    background-color: rgb(235, 235, 235);
+  }
+
+  &__sections {
+    &__room {
+      cursor: pointer;
+      text-decoration: underline;
+      width: 100px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      &:hover {
+        color: red;
+      }
+    }
+    &__dates {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.4rem;
+
+      &__container {
+        display: flex;
+        gap: 0.25rem;
+
+        &__text {
+          font-weight: 500;
+          color: red;
+        }
+      }
+    }
+
+    &__actions {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      &__button {
+        padding: 0.1rem 0.3rem;
+        padding-top: 0.2rem;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &__download {
+          background-color: #259a7a;
+        }
+        &__view {
+          background-color: rgb(0, 217, 255);
+        }
+        &__delete {
+          background-color: red;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .allBookinksTableOptions {
+    &__sections {
+      min-width: 200px !important;
+
+      &__dates {
+        &__container {
+          min-width: 200px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .allBookinksTableOptions {
+    margin: 0;
+    border-radius: 0;
+    justify-content: initial;
+    padding: 0;
+    border-right: none;
+    border-bottom: none;
+    gap: 0;
+
+    &__sections {
+      border-right: 1px solid black;
+      padding: 0.5rem;
+      height: 40px;
+      min-width: 150px;
+
+      &__dates {
+        padding: 0;
+        flex-direction: row;
+
+        &__container {
+          height: 40px;
+          border-right: 1px solid black;
+          min-width: 100px;
+          justify-content: center;
+          align-items: center;
+
+          &__paid {
+            border: none;
+          }
+
+          &__text {
+            display: none;
+          }
+        }
+      }
+
+      &__actions {
+        flex-direction: row;
+        align-items: center;
+        transform: translateY(-3px);
+        gap: 1rem;
+      }
+    }
+  }
+}

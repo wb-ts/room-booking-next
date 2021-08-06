@@ -1,0 +1,112 @@
+.paymentBox {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  &__price {
+    display: flex;
+    gap: 0.3rem;
+
+    &__value {
+      font-size: 2rem;
+      color: #259a7a;
+      font-weight: bold;
+    }
+  }
+
+  &__date {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__display {
+      display: flex;
+      justify-content: center;
+      gap: 0.2rem;
+      left: 5px;
+      right: 5px;
+      bottom: 79px;
+      position: fixed;
+
+      background-color: whitesmoke;
+      padding: 1rem;
+      border-radius: 10px;
+
+      &__input {
+        text-align: center;
+        background-color: black;
+        width: 100%;
+        border-radius: 20px;
+        color: white;
+        padding: 0.2rem 0.5rem;
+      }
+    }
+
+    &__calender {
+      &__title {
+        display: none;
+      }
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      cursor: pointer;
+    }
+
+    &__button {
+      display: none;
+    }
+  }
+
+  &__book {
+    padding: 1rem;
+    color: white;
+    font-weight: bold;
+    border: none;
+    background-color: #259a7a;
+    border-radius: 30px;
+    cursor: pointer;
+    &:hover {
+      background-color: black;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .paymentBox {
+    gap: 1.8rem;
+    flex-direction: column;
+    align-items: center;
+
+    &__date {
+      align-items: center;
+      justify-content: initial;
+
+      &__display {
+        position: static;
+        padding: 0;
+        padding-bottom: 0.5rem;
+      }
+
+      &__calender {
+        display: none;
+      }
+
+      &__button {
+        margin-top: 1rem;
+        display: flex;
+        gap: 0.5rem;
+      }
+    }
+
+    &__book {
+      width: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 480px) {
+  .paymentBox__date__calender__title {
+    display: flex;
+    font-weight: bold;
+  }
+}

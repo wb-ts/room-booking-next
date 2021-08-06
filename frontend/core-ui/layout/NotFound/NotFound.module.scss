@@ -1,0 +1,20 @@
+.notFound {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 2rem;
+
+  &__404 {
+    font-size: 5rem;
+    color: #259a7a;
+  }
+
+  &__link {
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+  }
+}

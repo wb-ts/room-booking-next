@@ -1,0 +1,43 @@
+.ratings {
+  display: flex;
+
+  // justify-content: center;
+  // align-items: center;
+
+  &__label {
+    &__input {
+      display: none;
+    }
+    &__star {
+      clip-path: polygon(
+        50% 0,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+      );
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      transition: 200ms;
+
+      &__displayOnly {
+        position: relative;
+        height: 20px;
+        width: 20px;
+        &__innerDiv {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          background-color: red;
+        }
+      }
+    }
+  }
+}

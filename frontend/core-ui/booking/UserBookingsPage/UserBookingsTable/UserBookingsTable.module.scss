@@ -1,0 +1,30 @@
+.userBookingsTable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 70vh;
+
+  &__top {
+    &__search {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+
+  &__mid__heading {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .userBookingsTable {
+    &__mid__heading {
+      display: block;
+      * {
+        font-weight: bold;
+      }
+    }
+  }
+}

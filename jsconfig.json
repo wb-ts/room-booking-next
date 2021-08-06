@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@pages/*": ["pages/*"],
+      "@styles/*": ["styles/*"],
+
+      "@controllers/*": ["backend/controllers/*"],
+      "@config/*": ["backend/config/*"],
+      "@data/*": ["backend/data/*"],
+      "@models/*": ["backend/models/*"],
+      "@utils/*": ["backend/utils/*"],
+      "@middlewares/*": ["backend/middlewares/*"],
+
+      "@assets/*": ["frontend/assets/*"],
+      "@components/*": ["frontend/components/*"],
+      "@core-ui/*": ["frontend/core-ui/*"],
+      "@helpers/*": ["frontend/helpers/*"],
+      "@redux/*": ["frontend/redux/*"],
+      "@icons/*": ["frontend/icons/*"]
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.allReviewsPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+
+  &__top {
+    display: flex;
+    gap: 1rem;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      min-height: 70vh;
+
+      &__search {
+        &__form {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+        }
+      }
+
+      &__mid__heading {
+        // display: none;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .allReviewsPage {
+    gap: 5rem;
+
+    &__top {
+      gap: 3rem;
+
+      &__container__mid__heading {
+        display: block;
+        * {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}

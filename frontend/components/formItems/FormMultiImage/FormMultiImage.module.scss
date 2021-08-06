@@ -1,0 +1,80 @@
+.formMultiImage {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem 0;
+
+  &__label {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0;
+
+    &__images {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      &__preview {
+        border-radius: 99px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+        min-width: 45px;
+        gap: 0.5rem;
+      }
+    }
+
+    &__select {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      position: relative;
+      cursor: pointer;
+      gap: 2rem;
+
+      &__location {
+        width: 100px;
+        white-space: nowrap;
+      }
+
+      &__input {
+        &::-webkit-file-upload-button {
+          visibility: hidden;
+        }
+        width: 0;
+        content: "Select Image";
+        display: inline-block;
+        background: linear-gradient(to top, #259a7a, #259a7a);
+        // border: 1px solid #999;
+        border-radius: 99px;
+        padding: 0.3rem 0rem;
+        white-space: nowrap;
+        user-select: none;
+        cursor: pointer;
+        text-shadow: 1px 1px #000000;
+        font-weight: bold;
+        font-size: 1rem;
+        color: black;
+        // width: 100px;
+
+        &:hover::before {
+          border-color: black;
+        }
+        &:active::before {
+          background: -webkit-linear-gradient(to top, #e3e3e3, #f9f9f9);
+        }
+      }
+
+      &__browse {
+        // position: absolute;
+        // right: 30%;
+        background: linear-gradient(to top, #259a7a, #259a7a);
+        border: 1px solid #999;
+        padding: 0.5rem 1rem;
+        border-radius: 30px;
+      }
+    }
+  }
+}

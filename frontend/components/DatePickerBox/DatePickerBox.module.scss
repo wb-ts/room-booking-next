@@ -1,0 +1,50 @@
+.datePickerBox {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.397);
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &__notify {
+    position: relative;
+    background-color: rgb(182, 182, 182);
+    padding: 0.5rem 2rem;
+    min-width: 240px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+
+    &__message {
+      text-align: center;
+      font-weight: bold;
+
+      &__available {
+        color: #259a7a;
+      }
+      &__unavailable {
+        color: #e0130c;
+      }
+    }
+
+    &__reset {
+      position: absolute;
+      right: 10px;
+      cursor: pointer;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 0.5rem;
+  }
+}

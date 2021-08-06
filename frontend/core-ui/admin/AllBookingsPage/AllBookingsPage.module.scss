@@ -1,0 +1,12 @@
+.allBookingsPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+@media (min-width: 768px) {
+  .allBookingsPage {
+    gap: 5rem;
+  }
+}

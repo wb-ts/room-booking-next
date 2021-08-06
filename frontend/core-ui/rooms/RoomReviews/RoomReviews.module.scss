@@ -1,0 +1,16 @@
+.roomReviews {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: flex-start;
+  max-width: 700px;
+
+  &__name {
+    padding: 0.5rem 0;
+    color: gray;
+  }
+
+  &__comment {
+    font-weight: bold;
+  }
+}

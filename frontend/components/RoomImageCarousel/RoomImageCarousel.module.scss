@@ -1,0 +1,51 @@
+.roomImageCarousel {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  &__navigation {
+    display: flex;
+    padding: 0.2rem;
+    background-color: white;
+    z-index: 2;
+    border-radius: 99px;
+    position: absolute;
+    cursor: pointer;
+
+    &__left {
+      left: 10px;
+    }
+    &__right {
+      right: 10px;
+    }
+  }
+  &__image {
+    height: 200px;
+  }
+  &__navs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    gap: 0.5rem;
+
+    * {
+      fill: rgb(73, 73, 73);
+    }
+
+    &__icon__symbol {
+      cursor: pointer;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .roomImageCarousel {
+    &__image {
+      height: 350px;
+    }
+  }
+}

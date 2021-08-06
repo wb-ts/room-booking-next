@@ -1,0 +1,13 @@
+.submitButton {
+  padding: 0.5rem;
+  background-color: #259a7a;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &__text {
+    color: #ffffffff;
+    font-size: 1.05rem;
+    font-weight: bold;
+  }
+}

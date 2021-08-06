@@ -1,0 +1,136 @@
+@mixin border {
+  border: 1px solid black;
+}
+
+.userBookingTableOptions {
+  margin-top: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  @include border();
+  border-radius: 10px;
+  gap: 1rem;
+
+  &:hover {
+    background-color: rgb(235, 235, 235);
+  }
+
+  &__sections {
+    &__room {
+      cursor: pointer;
+      text-decoration: underline;
+
+      &:hover {
+        color: red;
+      }
+    }
+    &__dates {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.4rem;
+
+      &__container {
+        display: flex;
+        gap: 0.25rem;
+
+        &__text {
+          font-weight: 500;
+          color: red;
+        }
+      }
+    }
+
+    &__download {
+      background-color: #259a7a;
+      padding: 0.1rem 0.3rem;
+      border-radius: 5px;
+      cursor: pointer;
+      * {
+        color: white;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .userBookingTableOptions {
+    &__sections {
+      min-width: 200px !important;
+
+      &__dates {
+        &__container {
+          min-width: 200px !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .userBookingTableOptions {
+    margin: 0;
+    border-radius: 0;
+    justify-content: initial;
+    padding: 0;
+    border-right: none;
+    border-bottom: none;
+    gap: 0;
+
+    &__sections {
+      border-right: 1px solid black;
+      padding: 0.5rem;
+      height: 40px;
+      min-width: 70px;
+
+      &__dates {
+        padding: 0;
+        flex-direction: row;
+
+        &__container {
+          height: 40px;
+          border-right: 1px solid black;
+          min-width: 100px;
+          justify-content: center;
+          align-items: center;
+
+          &__paid {
+            border: none;
+          }
+
+          &__text {
+            display: none;
+          }
+        }
+      }
+
+      &__button {
+        min-width: 100px;
+        display: flex;
+        justify-content: center;
+      }
+
+      &__acions {
+        display: flex;
+        gap: 1rem;
+        &__button {
+          padding: 0.1rem 0.3rem;
+          border-radius: 5px;
+          cursor: pointer;
+
+          * {
+            color: white;
+          }
+
+          &__download {
+            background-color: #259a7a;
+          }
+          &__view {
+            background-color: #f72119;
+          }
+        }
+      }
+    }
+  }
+}

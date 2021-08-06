@@ -1,0 +1,97 @@
+$ring-offset-shadow: 0 0 transparent;
+$ring-shadow: 0 0 transparent;
+$md-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1),
+  0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+.roomDetails {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  &__response {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0.5rem;
+
+    &__rating {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+
+      &__value {
+        display: flex;
+        justify-content: center;
+        color: #259a7a;
+        font-weight: bold;
+        background-color: #259a7b4b;
+        padding: 0.3rem;
+        width: 33px;
+        height: 32px;
+        margin-top: -0.2rem;
+        border-radius: 5px;
+      }
+    }
+
+    &__actions {
+      display: flex;
+    }
+  }
+  &__info {
+    padding: 0 0.5rem;
+
+    &__details {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+
+      &__description {
+        max-width: 1000px;
+      }
+    }
+    &__payment {
+      box-shadow: ($ring-offset-shadow, 0 0 #0000), ($ring-shadow, 0 0 #0000),
+        $md-shadow;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgb(255, 255, 255);
+      z-index: 20;
+    }
+  }
+
+  &__facility {
+    padding: 0.5rem;
+  }
+
+  &__reviews {
+    padding: 0.5rem;
+  }
+  //
+}
+
+@media (min-width: 768px) {
+  .roomDetails {
+    margin-bottom: 0;
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+
+      &__details {
+        min-width: 400px;
+      }
+
+      &__payment {
+        background-color: whitesmoke;
+        border-radius: 20px;
+        position: relative;
+        box-shadow: none;
+        max-width: 500px;
+        margin-right: 1rem;
+      }
+    }
+  }
+}

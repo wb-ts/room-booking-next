@@ -1,0 +1,11 @@
+.registeration {
+  &__login {
+    margin: 1rem 0;
+    &__button {
+      cursor: pointer;
+      color: rgb(133, 13, 13);
+      font-weight: bolder;
+      text-decoration: underline;
+    }
+  }
+}

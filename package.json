@@ -1,0 +1,45 @@
+{
+  "name": "mybnb",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "seeder": "node backend/utils/seeders"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "@reduxjs/toolkit": "^1.6.0",
+    "@stripe/stripe-js": "^1.16.0",
+    "axios": "^0.21.1",
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.26.2",
+    "easyinvoice": "^1.0.144",
+    "moment": "^2.29.1",
+    "moment-range": "^4.0.2",
+    "mongoose": "^5.12.14",
+    "mongoose-timezone": "^1.3.0",
+    "next": "11.0.0",
+    "next-absolute-url": "^1.2.2",
+    "next-auth": "^3.27.1",
+    "next-connect": "^0.10.1",
+    "next-redux-wrapper": "^7.0.2",
+    "nodemailer": "^6.6.2",
+    "raw-body": "^2.4.1",
+    "react": "17.0.2",
+    "react-datepicker": "^4.1.1",
+    "react-dom": "17.0.2",
+    "react-redux": "^7.2.4",
+    "react-toastify": "^7.0.4",
+    "sass": "^1.35.1",
+    "stripe": "^8.163.0",
+    "validator": "^13.6.0"
+  },
+  "devDependencies": {
+    "eslint": "7.29.0",
+    "eslint-config-next": "11.0.0"
+  }
+}
